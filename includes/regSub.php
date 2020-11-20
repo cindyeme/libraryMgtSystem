@@ -15,8 +15,8 @@
             $mobile = checkData($_POST['mobile']);
             $email = checkData($_POST['email']);
             $password = checkData($_POST['password']);
-            $faculty = checkData($_POST['faculty']);
-            $department = checkData($_POST['department']);
+            // $faculty = checkData($_POST['faculty']);
+            // $department = checkData($_POST['department']);
 
                 // check if email already exist
             $query = "SELECT * FROM users WHERE serial_number = '$serial_number' AND deleted = 1";
@@ -34,7 +34,7 @@
             // try inserting values
             $newPassword = sha1($password);
 
-            $sql = "INSERT INTO users(fullname, serial_number, mobile, email, password, faculty, department) VALUES ('$fullname', '$serial_number', '$mobile', '$email', '$newPassword', '$faculty', '$department')";
+            $sql = "INSERT INTO users(fullname, serial_number, mobile, email, password) VALUES ('$fullname', '$serial_number', '$mobile', '$email', '$newPassword')";
 
             // execute query
             $result = mysqli_query($conn, $sql);

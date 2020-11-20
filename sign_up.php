@@ -79,7 +79,7 @@
                           <span class="input-group-text"><i class="bx bx-lock"></i></span>
                         </div>
                     </div>
-                    <div class="input-group">
+                    <!-- <div class="input-group">
                       <label for="txt_faculty">Faculty</label>
                         <input type="text" name="faculty" id="txt_faculty" class="form-control" placeholder="Faculty" required>
                         <div class="input-group-append">
@@ -92,7 +92,7 @@
                         <div class="input-group-append">
                           <span class="input-group-text"><i class="bx bx-tag"></i></span>
                         </div>
-                    </div>
+                    </div> -->
 
                     <div class="msg">
                       <span class="text-center terms">Sign up means you agree with our <a href="#" class="pl-2">Terms and policy.</a></span>

@@ -22,6 +22,11 @@
 
   $row = mysqli_fetch_assoc($res);
 
+  // for user data
+  $userid = "SELECT * FROM users WHERE usn = '".$_SESSION['serial_number']."'";
+  $user_res = mysqli_query($conn, $userid);
+
+  $user_row = mysqli_fetch_assoc($user_res);
 ?>
 
 <!DOCTYPE html>
