@@ -1,23 +1,39 @@
-<!-- <?php
+<?php
     require_once('conn.php');
+    
+    $error = array();
 
     if(isset($_POST['submit'])){
         $usn = isset($_POST['usn']) ? trim($_POST['usn']) : "";
         $author = isset($_POST['author']) ? trim($_POST['author']) : "";
-        $isbn = isset($_POST['isbn']) ? trim($_POST['isbn']) : "";
         $book_id = isset($_POST['title']) ? trim($_POST['title']) : "";
+        $isbn = isset($_POST['isbn']) ? trim($_POST['isbn']) : "";
+
 
         if($usn == "" || $isbn == "" || $book_id == "" || $author == ""){
-            header('location: ../book_details.php?error = Please all fields are required!');
+            $error[] = urlencode('Please all fields are required!');
         }
 
-        $insert_book = "INSERT INTO reserve(usn, author, book_id, isbn) VALUES ('$usn', '$author' '$book_id', '$isbn')";
-        $book_res = mysqli_query($conn, $insert_book);
+        $user_query = "SELECT * FROM `users` WHERE `serial_number` = '$usn' AND `deleted` = 0";
 
-        if($book_res){
-            header('location: ../book_details.php?success=Book reserved!');
+        $user_res = mysqli_query($conn, $user_query);
+
+        if(mysqli_num_rows($user_res) < 1){
+            $error = "Enter a valid serial_number!";
+            header('location: ../book_details.php?error='.$error);
+
         }else{
-            header('location: ../book_details.php?error=Error reserving book!');
+
+            $insert_book = "INSERT INTO reserve(usn, author, book_id, isbn) VALUES ('$usn', '$author' '$book_id', '$isbn')";
+            $book_res = mysqli_query($conn, $insert_book);
+
+            if($book_res){
+                $error[] = urlencode('Book reserved!');
+            }else{
+                $error[] = urlencode('Error reserving book!');
+            }
         }
+    }else{
+         header('location: ../book_details.php?error='.join($error, urlencode('<br>')));
     }
-?> -->
+?>

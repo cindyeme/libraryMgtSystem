@@ -526,7 +526,7 @@ img{
 }
 @media(min-width: 993px){
   #sign_up .container{
-    max-width: 600px !important;
+    max-width: 500px !important;
 }}
 .forgot_password .forgot_container{
   transform: translateY(50%) !important;
@@ -536,6 +536,7 @@ img{
 }
 #sign_up .container{
   background: #fff;
+
 }
 #sign_up .main_content{
   font-family: "Poppins", sans-serif;
@@ -1462,4 +1463,42 @@ section {
 }
 #record .book-cap .status{
   letter-spacing: 1px;
+}
+
+/*--------------------------------------------------------------
+# Record
+--------------------------------------------------------------*/
+.fiction_item.owl-carousel .owl-item img {
+  width: auto;
+  margin: 0 auto;
+}
+.fiction_item.owl-carousel .owl-nav button {
+  height: 44px;
+  width: 44px;
+  border: 1px solid #ebebeb;
+  font-size: 24px;
+  color: #707079;
+  background: #ffffff;
+  line-height: 48px;
+  text-align: center;
+  border-radius: 50%;
+  position: absolute;
+  left: -190px;
+  top: 50%;
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.fiction_item.owl-carousel .owl-nav button:hover {
+  border-color: #8577fb;
+  color: #8577fb;
+}
+
+.fiction_item.owl-carousel .owl-nav button.owl-next {
+  left: auto;
+  right: -190px;
 }

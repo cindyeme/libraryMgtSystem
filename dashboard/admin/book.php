@@ -52,7 +52,7 @@
           unset($_SESSION['success']);
         }
       ?>
-      <div class="row">
+      <div class="row" id="overflow">
         <div class="col-sm-12">
           <div class="box">
             <div class="box-header with-border">
@@ -86,6 +86,8 @@
                   <th>Title</th>
                   <th>Author</th>
                   <th>Publisher</th>
+                  <th>Edition</th>
+                  <th>Pages</th>
                   <th>Photo</th>
                   <th>Status</th>
                   <th>Tools</th>
@@ -108,6 +110,8 @@
                           <td>".$row['title']."</td>
                           <td>".$row['author']."</td>
                           <td>".$row['publisher']."</td>
+                          <td>".$row['edition']."</td>
+                          <td>".$row['pages']."</td>
                           <td>".$row['photo']."</td>
                           <td>".$status."</td>
                           <td>

@@ -22,11 +22,6 @@
 
   $row = mysqli_fetch_assoc($res);
 
-  // for user data
-  $userid = "SELECT * FROM users WHERE usn = '".$_SESSION['serial_number']."'";
-  $user_res = mysqli_query($conn, $userid);
-
-  $user_row = mysqli_fetch_assoc($user_res);
 ?>
 
 <!DOCTYPE html>
@@ -35,36 +30,12 @@
     <meta charset="utf-8" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
-    <title>Lib-Cater</title>
+    <title>Lib-Cater / Book Details</title>
     <meta content="" name="descriptison" />
     <meta content="" name="keywords" />
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon" />
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon" />
+  <?php require_once('includes/css-links.php') ?>
 
-    <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-      rel="stylesheet"
-    />
-
-    <!-- Vendor CSS Files -->
-    <link
-      href="assets/vendor/bootstrap/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
-    <link
-      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
-      rel="stylesheet"
-    />
-    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet" />
-
-    <!--  Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -161,9 +132,10 @@
                 <h4>Author: <span><?=$row['author'] ?></span></h4>
                 <h4>ISBN: <span><?=$row['isbn'] ?></span></h4>
                 <h4>Category: <span><?=$catrow['name'] ?></span></h4>
-                <h4>Edition: <span>2nd Edition</span></h4>
+                <h4>Edition: <span><?=$row['edition'] ?></span></h4>
                 <h4>Language: <span>English</span></h4>
-                <h4>Pages: <span>389</span></h4>
+                <h4>Pages: <span><?=$row['pages'] ?></span></h4>
+                <h4 class="status">Availability: <span><?=$status = ($row['status'] == 0) ? '<span class="alert alert-success text-white p-0 m-0" style="background: #7b27d8; border: 5px solid #7b27d8;">available</span>' : '<span class="alert alert-danger text-white p-0 m-0" style="background: #dd4b39; border: 3px solid #dd4b39;">not available</span>';?></span></h4>
               </div>
 
               <div class="about_author pt-4">
@@ -187,8 +159,8 @@
                 <h3>About the book</h3>
                 <p class="text-justify">
                   The purpose of this book is to meet the needs of students
-                  commencing the study of <span><?=$row['title'] ?></span>. The audience includes everyone interested in
-                  software and data structure. This book prepares you for
+                  commencing the study of <span><?=$row['title'] ?></span>. The audience includes everyone interested in 
+                  <span><?=$row['title'] ?></span>. This book prepares you for
                   programming examination in information and computer science.
                   The context of this text reperesent notes and other
                   information used in teaching students where each student is
@@ -197,8 +169,7 @@
                 </p>
                 <p>
                   There are two parts of this book. The first part surveys the
-                  Data Structure & Algorithm and second part is the Software
-                  Engineering.
+                  <span><?=$row['title'] ?></span> and second part is the <span><?=$row['title'] ?></span>.
                 </p>
               </div>
               <div class="btns clearfix">
@@ -207,7 +178,7 @@
                     ><i class="bx bx-download"></i> Download pdf</a
                   >
                 </button>
-                <button type="submit" name="reserve" id="reserveBtn" data-toggle="modal" data-target="#reserveBook">
+                <button id="reserveBtn" data-toggle="modal" data-target="#reserveBook">
                   <a href="#"><i class="bx bx-save"></i> Reserve</a>
                 </button>
                 <?php require_once('reserveBook.php'); ?>
@@ -215,7 +186,6 @@
                 <button id="shareBtn">
                   <a href="#" data-toggle="modal" data-target="#share"><i class="bx bx-share"></i> Share</a>
                 </button>
-                <p id="reserveNotif" class="d-none float-right px-3">Book reserved!</p>
 
               </div>
             </div>

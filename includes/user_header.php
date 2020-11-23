@@ -10,24 +10,10 @@
   <meta content="Lib-Cater" name="An automated system that manages all manual functions of a library.">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" type="image/png" rel="shortcut icon">
-  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <?php require_once('includes/css-links.php') ?>
   
   <?php require_once('header.php'); ?>
-  <!--  Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+
     <style>
       @media(max-width: 992px){
   #reMsign_out {
@@ -64,7 +50,6 @@
             <ul>
               <li class="active"><a class="pt-4" href="user_index.php">Home</a></li>
               <li><a class="pt-4" href="#record">Record</a></li>
-              <li><a class="pt-4" href="#past_questions">Past Questions</a></li>
               <li><a class="pt-4" href="#contact">Contact Librarian</a></li>
               <li id="user_info" class="user_info d-flex justify-content-between ml-4">
                 <img src="dist/img/avatar.png" style="border-radius: 50%; width: 40px; height: 40px; object-fit: cover;" class="img-fluid mr-4" alt="user_img">

@@ -7,26 +7,10 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Lib-Cater</title>
-  <meta content="" name="descriptison">
+   <meta content="Lib-Cater" name="An automated system that manages all manual functions of a library.">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
-  <link href="assets/img/favicon.png" type="image/png" rel="shortcut icon">
-  <!-- <link href="assets/bookImg/apple-touch-icon.png" rel="apple-touch-icon"> -->
-
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-
-  <!--  Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <?php require_once('includes/css-links.php') ?>
 
 </head>
 
@@ -38,7 +22,7 @@
 
       <div class="row justify-content-center">
         <div class="col-xl-9 d-flex align-items-center">
-          <a href="home_index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
+          <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
 
           <nav class="nav-menu d-none d-lg-block">
             <ul>

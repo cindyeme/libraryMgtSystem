@@ -9,6 +9,8 @@
 		$author = $_POST['author'];
 		$publisher = $_POST['publisher'];
 		$pub_date = $_POST['pub_date'];
+		$edition = $_POST['edition'];
+		$pages = $_POST['pages'];
 		$filename = $_FILES['photo']['name'];
 		$fileTemp = $_FILES['photo']['tmp_name'];
 
@@ -35,7 +37,7 @@
 		// }
         
 
-		$sql = "INSERT INTO books (isbn, category_id, title, author, publisher, publish_date, photo) VALUES ('$isbn', '$category', '$title', '$author', '$publisher', '$pub_date', '$pic')";
+		$sql = "INSERT INTO books (isbn, category_id, title, author, publisher, publish_date, edition, pages, photo) VALUES ('$isbn', '$category', '$title', '$author', '$publisher', '$pub_date', '$edition', '$pages',  '$pic')";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Book added successfully';
 		}

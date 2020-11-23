@@ -30,7 +30,7 @@
                     header('location: ../user_index.php');
                 } else{
                     $errorMsg = " Please--enter--correct--login--details!";
-                    header('location: ../home_index.php?error='.$errorMsg);
+                    header('location: ../index.php?error='.$errorMsg);
                 }
             }
 

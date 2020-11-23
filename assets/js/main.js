@@ -5,7 +5,7 @@
   // Preloader
   $(window).on('load', function() {
     if ($('#preloader').length) {
-      $('#preloader').delay(100).fadeOut('slow', function() {
+      $('#preloader').delay(50).fadeOut('slow', function() {
         $(this).remove();
       });
     }
@@ -132,6 +132,20 @@
   if ($(window).scrollTop() > 100) {
     $('#header').addClass('header-scrolled');
   }
+
+
+    /*------------------------
+		Fiction & Non-Fiction
+    ----------------------- */
+    $(".fiction_item").owlCarousel({
+      items: 5,
+      dots: false,
+      autoplay: true,
+      loop: true,
+      smartSpeed: 1200,
+      nav: true,
+      navText: ["<i class='arrow_left'></i>", "<i class='arrow_right'></i>"]
+    });
 
   // Back to top button
   $(window).scroll(function() {

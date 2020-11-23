@@ -29,7 +29,7 @@ require_once('conn.php');
          //check if successful
             if($pwd_result){
                 $success = "Password--successfully--changed!";
-                header("location: ../home_index.php?success=" .$success);
+                header("location: ../index.php?success=" .$success);
             } else{
                 $failed = "Password--reset--failed!";
                 header("location: ../newPassword.php?failed=" .$failed);

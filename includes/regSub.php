@@ -45,7 +45,7 @@
                 header('location: ../user_index.php');
             }else{
                 // echo 'Registration failed!';
-                header('location: ../home_index.php');
+                header('location: ../index.php');
                 }
             }
         } 

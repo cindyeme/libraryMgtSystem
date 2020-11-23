@@ -3,7 +3,7 @@
         session_start();
         session_unset();
 
-        header('location: ../home_index.php');
+        header('location: ../index.php');
 
     // if(isset($_POST['submit_yes'])){
     //     session_start();

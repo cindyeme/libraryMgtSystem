@@ -21,7 +21,7 @@
         $user = mysqli_fetch_assoc($result);
     }else{
       $errorMsg = "Login--first!";
-        header('location: home_index.php?error='.$errorMsg);
+        header('location: index.php?error='.$errorMsg);
     }
 
 ?>

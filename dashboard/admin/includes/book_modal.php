@@ -64,6 +64,24 @@
                       </div>
                     </div>
                 </div>
+                <div class="form-group">
+                    <label for="edition" class="col-sm-3 control-label">Edition</label>
+
+                    <div class="col-sm-9">
+                      <div class="edition">
+                        <input type="text" class="form-control" id="edition" name="edition">
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pages" class="col-sm-3 control-label">Pages</label>
+
+                    <div class="col-sm-9">
+                      <div class="pages">
+                        <input type="text" class="form-control" id="pages" name="pages">
+                      </div>
+                    </div>
+                </div>
                  <div class="form-group">
                     <label for="image" class="col-sm-3 control-label">Image:</label>
 
@@ -145,6 +163,24 @@
                     <div class="col-sm-9">
                       <div class="date">
                         <input type="text" class="form-control" id="datepicker_edit" name="pub_date">
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="edition" class="col-sm-3 control-label">Edition</label>
+
+                    <div class="col-sm-9">
+                      <div class="edition">
+                        <input type="text" class="form-control" id="edition" name="edition">
+                      </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="pages" class="col-sm-3 control-label">Pages</label>
+
+                    <div class="col-sm-9">
+                      <div class="pages">
+                        <input type="text" class="form-control" id="pages" name="pages">
                       </div>
                     </div>
                 </div>

@@ -90,13 +90,6 @@
                 <img src="./assets/img/magazines.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">Magazines / Newspapers</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> The Sun</li>
-                    <li><i class="bx bx-check"></i> Vanguard</li>
-                    <li><i class="bx bx-check"></i> Guardian</li>
-                    <li><i class="bx bx-check"></i> Truth</li>
-                    <li><i class="bx bx-check"></i> Daily</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -107,13 +100,6 @@
                 <img src="./assets/img/science.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">Science</h4>
-                  <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Computer Science</li>
-                    <li><i class="bx bx-check"></i> Mathematics</li>
-                    <li><i class="bx bx-check"></i> Chemistry/Ind. Chem.</li>
-                    <li><i class="bx bx-check"></i> Statistics</li>
-                    <li><i class="bx bx-check"></i> Microbiology</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -124,13 +110,6 @@
                 <img src="./assets/img/law.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">Law</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Criminal Law</li>
-                    <li><i class="bx bx-check"></i> Environmental Law</li>
-                    <li><i class="bx bx-check"></i> Civil Rights Law</li>
-                    <li><i class="bx bx-check"></i> Business Law</li>
-                    <li><i class="bx bx-check"></i> Admiralty Law</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -141,14 +120,6 @@
                 <img src="./assets/img/engineering.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">Engineering</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Agric. Engr.</li>
-                    </li>
-                    <li><i class="bx bx-check"></i> Civil Engr.</li>
-                    <li><i class="bx bx-check"></i> Electrical & Electronics</li>
-                    <li><i class="bx bx-check"></i> Food Sci. Tech.</li>
-                    <li><i class="bx bx-check"></i> Mechanical Engr.</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -159,14 +130,6 @@
                 <img src="./assets/img/education.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">education</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Arts Education</li>
-                    </li>
-                    <li><i class="bx bx-check"></i> Life Science Edu.</li>
-                    <li><i class="bx bx-check"></i> Language Edu.</li>
-                    <li><i class="bx bx-check"></i> Library & Info Sci.</li>
-                    <li><i class="bx bx-check"></i> Foundation & Counseling</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -177,13 +140,6 @@
                 <img src="./assets/img/health_sci.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">health science</h4>
-                  <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Optometry</li>
-                    </li>
-                    <li><i class="bx bx-check"></i> Nutrition & Diet.</li>
-                    <li><i class="bx bx-check"></i> Nursing science</li>
-                    <li><i class="bx bx-check"></i> Medical Lab. Science</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -194,13 +150,6 @@
                 <img src="./assets/img/agric_vet.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">Agric / Vet. Med.</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Crop Sc. & Biotech.</li>
-                    </li>
-                    <li><i class="bx bx-check"></i> Animal Sci. & Fisheries</li>
-                    <li><i class="bx bx-check"></i> Soil Sci. & Enviro.</li>
-                    <li><i class="bx bx-check"></i> Agri. Economics...</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -211,14 +160,6 @@
                 <img src="./assets/img/humanities.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">humanities</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Religious Studies</li>
-                    </li>
-                    <li><i class="bx bx-check"></i> French</li>
-                    <li><i class="bx bx-check"></i> Philosophy</li>
-                    <li><i class="bx bx-check"></i> Liguistics & Igbo</li>
-                    <li><i class="bx bx-check"></i> History & Int'l Studies</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -229,14 +170,6 @@
                 <img src="./assets/img/med.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">medicine</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Dermatology</li>
-                    </li>
-                    <li><i class="bx bx-check"></i> Anesthesiology</li>
-                    <li><i class="bx bx-check"></i> Family Medicine</li>
-                    <li><i class="bx bx-check"></i> General Internal Med.</li>
-                    <li><i class="bx bx-check"></i> Emergency Medicine</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -247,14 +180,6 @@
                 <img src="./assets/img/social_sci.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">social science</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Economics</li>
-                    </li>
-                    <li><i class="bx bx-check"></i> Geography & Enviro. Mgt.</li>
-                    <li><i class="bx bx-check"></i> Political Sci.</li>
-                    <li><i class="bx bx-check"></i> Sociology</li>
-                    <li><i class="bx bx-check"></i> Mass Communication</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -265,14 +190,6 @@
                 <img src="./assets/img/enviro_sci.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">environmental sci.</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Building</li>
-                    </li>
-                    <li><i class="bx bx-check"></i> Architechure</li>
-                    <li><i class="bx bx-check"></i> Quantity Surveying</li>
-                    <li><i class="bx bx-check"></i> Fine & Applied Arts</li>
-                    <li><i class="bx bx-check"></i> Surveying & GeoInformatics</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -283,14 +200,6 @@
                 <img src="./assets/img/mgt_science.jpg" alt="" class="img-fluid">
                 <div class="card-img-overlay">
                   <h4 class="text-uppercase">management sci.</h4>
-                    <ul class="p-0 m-0 list-inline d-none">
-                    <li><i class="bx bx-check"></i> Marketing</li>
-                    </li>
-                    <li><i class="bx bx-check"></i> Banking & Finance</li>
-                    <li><i class="bx bx-check"></i> Accountancy</li>
-                    <li><i class="bx bx-check"></i> Management Studies</li>
-                    <li><i class="bx bx-check"></i> Hospitality & Tourism Mgt.</li>
-                  </ul>
                 </div>
               </div>
             </div>
@@ -312,7 +221,7 @@
         <div class="faq-list">
           <ul>
             <li data-aos="fade-up" data-aos="fade-up" data-aos-delay="100">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">Non consectetur a erat nam at lectus urna duis? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" class="collapse" href="#faq-list-1">How do I access library resources from off-campus? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-1" class="collapse show" data-parent=".faq-list">
                 <p>
                   Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
@@ -321,7 +230,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="200">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">Feugiat scelerisque varius morbi enim nunc? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-2" class="collapsed">How many books can I reserve at a time? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-2" class="collapse" data-parent=".faq-list">
                 <p>
                   Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim. Mauris ultrices eros in cursus turpis massa tincidunt dui.
@@ -330,7 +239,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="300">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Dolor sit amet consectetur adipiscing elit? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-3" class="collapsed">Are all downloads free? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-3" class="collapse" data-parent=".faq-list">
                 <p>
                   Eleifend mi in nulla posuere sollicitudin aliquam ultrices sagittis orci. Faucibus pulvinar elementum integer enim. Sem nulla pharetra diam sit amet nisl suscipit. Rutrum tellus pellentesque eu tincidunt. Lectus urna duis convallis convallis tellus. Urna molestie at elementum eu facilisis sed odio morbi quis
@@ -339,7 +248,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="400">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">Tempus quam pellentesque nec nam aliquam sem et tortor consequat? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-4" class="collapsed">What research resources are available? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-4" class="collapse" data-parent=".faq-list">
                 <p>
                   Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in.
@@ -348,7 +257,7 @@
             </li>
 
             <li data-aos="fade-up" data-aos-delay="500">
-              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">Tortor vitae purus faucibus ornare. Varius vel pharetra vel turpis nunc eget lorem dolor? <i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
+              <i class="bx bx-help-circle icon-help"></i> <a data-toggle="collapse" href="#faq-list-5" class="collapsed">How can I get one-on-one research help?<i class="bx bx-chevron-down icon-show"></i><i class="bx bx-chevron-up icon-close"></i></a>
               <div id="faq-list-5" class="collapse" data-parent=".faq-list">
                 <p>
                   Laoreet sit amet cursus sit amet dictum sit amet justo. Mauris vitae ultricies leo integer malesuada nunc vel. Tincidunt eget nullam non nisi est sit amet. Turpis nunc eget lorem dolor sed. Ut venenatis tellus in metus vulputate eu scelerisque.
