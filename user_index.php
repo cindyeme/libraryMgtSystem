@@ -84,20 +84,20 @@
 
         <div class="row justify-content-center">
           <div class="col-lg-12">
-            <div id="" class="fiction_item">
               <?php 
             
               $fict_query = "SELECT * FROM books WHERE category_id = 15 AND deleted = 1";
               $fict_res = mysqli_query($conn, $fict_query);
 
                 while($fict_row = mysqli_fetch_assoc($fict_res)){?>
-                <div class="img-box">
-                  <a href="book_details.php?book_id=<?=base64_encode($fict_row['id'])?>" class="" target="_blank">
-                    <img src="<?=$photo = (!empty($fict_row['photo']))? 'dashboard/images/uploads/'.$fict_row['photo'] : "assets/img/literature/demon-in-white.jpg"?>" class="img-fluid w-100 h-100" style="border-radius: 0;border: 1px dashed #7b27d8;">
-                  </a>
-                </div>
-                 <?php } ?>
-            </div>
+                <ul id="owl-carousel" class="fiction_item owl-carousel owl-theme">
+                  <li class="img-box list-unstyled d-inline">
+                    <a href="book_details.php?book_id=<?=base64_encode($fict_row['id'])?>" class="" target="_blank">
+                      <img src="<?=$photo = (!empty($fict_row['photo']))? 'dashboard/images/uploads/'.$fict_row['photo'] : "assets/img/literature/demon-in-white.jpg"?>" class="img-fluid w-100 h-100" style="border-radius: 0;border: 1px dashed #7b27d8; width: 175px !important; height: 250px !important;">
+                    </a>
+                  </li>
+                </ul>
+                <?php } ?>
           </div>
         </div>
       </div>

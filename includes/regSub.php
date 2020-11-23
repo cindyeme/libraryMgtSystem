@@ -15,8 +15,6 @@
             $mobile = checkData($_POST['mobile']);
             $email = checkData($_POST['email']);
             $password = checkData($_POST['password']);
-            // $faculty = checkData($_POST['faculty']);
-            // $department = checkData($_POST['department']);
 
                 // check if email already exist
             $query = "SELECT * FROM users WHERE serial_number = '$serial_number' AND deleted = 1";

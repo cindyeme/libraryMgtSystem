@@ -1468,17 +1468,14 @@ section {
 /*--------------------------------------------------------------
 # Record
 --------------------------------------------------------------*/
-.fiction_item.owl-carousel .owl-item img {
-  width: auto;
-  margin: 0 auto;
-}
+
 .fiction_item.owl-carousel .owl-nav button {
   height: 44px;
   width: 44px;
   border: 1px solid #ebebeb;
   font-size: 24px;
-  color: #707079;
-  background: #ffffff;
+  color: #fff;
+  background: #7b27d8;
   line-height: 48px;
   text-align: center;
   border-radius: 50%;

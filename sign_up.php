@@ -128,7 +128,7 @@
                   <div class="msg">
                     <span class="text-center sign-in"
                       >Already have account?
-                      <a href="home_index.php" class="pl-2">Sign In</a></span
+                      <a href="index.php" class="pl-2">Sign In</a></span
                     >
                   </div>
                 </form>

@@ -15,8 +15,8 @@
         // get the user information.
         $serial_number = $_SESSION['serial_number'];
 
-        $sql = "SELECT * FROM users WHERE serial_number = '$serial_number' AND deleted = 1";
-        $result = mysqli_query($conn, $sql);
+        $user_sql = "SELECT * FROM users WHERE serial_number = '$serial_number' AND deleted = 1";
+        $result = mysqli_query($conn, $user_sql);
 
         $user = mysqli_fetch_assoc($result);
     }else{

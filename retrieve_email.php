@@ -45,7 +45,7 @@
 
                     <div class="msg">
                         <span>
-                            <a href="home_index.php">Sign In &nbsp;/ </a>
+                            <a href="index.php">Sign In &nbsp;/ </a>
                             <a href="sign_up.php">&nbsp; Sign Up</a>
                         </span>
                     </div>
