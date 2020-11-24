@@ -3,7 +3,7 @@
   
 <?php require_once('includes/user_header.php'); ?>
 
-<?php require_once('sign_out.php'); ?>
+<!-- <?php require_once('sign_out.php'); ?> -->
   
   
 
@@ -29,44 +29,46 @@
 
   <section class="record" id="record">
     <div class="container">
-        <div class="section-title">
+        <div class="section-title" data-aos="fade-up">
           <h2>Books</h2>
           <p>Search and reserve available books</p>
         </div>
 
         <div class="row">
           <div class="col-lg-12 mb-4">
-            <form action="includes/search.php" method="POST">
+            <!-- <form action="includes/search.php" method="POST"> -->
               <div class="form-group has-feedback">
                 <input type="text" name="search" class="form-control" id="searchBox" placeholder="Search for Title or Author" >
                 <button type="submit" name="submit" id="btn_search" class=" form-control-feedback text-white" style="background: #7b27d8; border: 0;"><i class="bx bx-search"></i></button>
               </div>
-            </form>
+            <!-- </form> -->
           </div>
           
-            <?php 
-            
-            $query_book = "SELECT * FROM books WHERE deleted = 1 ORDER BY id LIMIT 15";
-            $book_res = mysqli_query($conn, $query_book);
 
-              while($row = mysqli_fetch_assoc($book_res)){?>
-                    <div class="col-xl-2 col-lg-3 col-md-6 mt-5">
-                      <div class="card border-0 p-0 m-0 single-book text-center">
-                          <div class="card-img p-0 m-0">
-                            <a href="book_details.php?book_id=<?=base64_encode($row['id'])?>" class="" target="_blank">
-                              <img src="<?=$photo = (!empty($row['photo']))? 'dashboard/images/uploads/'.$row['photo'] : "assets/img/anato_book.jpg"?>" class="img-fluid w-100 h-100" style="border-radius: 0;border: 1px dashed #7b27d8;">
-                            </a>
-                          </div>
-                          <div class="book-cap">
-                          <h5>Title: </h5>
-                          <p><?=$row['title']?></p>
-                          <h5>Author: </h5>
-                          <p><?=$row['author']?></p>
-                          <h5 class="status"><?=$status = ($row['status'] == 0) ? '<span class="label label-success">available</span>' : '<span class="label label-danger">not available</span>';?></h5>
-                          </div>
-                      </div>
-                    </div>
-              <?php } ?>
+
+          <?php 
+          
+          $query_book = "SELECT * FROM books WHERE deleted = 1 ORDER BY id LIMIT 15";
+          $book_res = mysqli_query($conn, $query_book);
+
+          while($row = mysqli_fetch_assoc($book_res)){?>
+            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 mt-5" data-aos="zoom-in">
+              <div class="card border-0 p-0 m-0 single-book text-center">
+                  <div class="card-img p-0 m-0">
+                    <a href="book_details.php?book_id=<?=base64_encode($row['id'])?>" class="" target="_blank">
+                      <img src="<?=$photo = (!empty($row['photo']))? 'dashboard/images/uploads/'.$row['photo'] : "assets/img/anato_book.jpg"?>" class="img-fluid w-100 h-100" style="border-radius: 0;border: 1px dashed #7b27d8;">
+                    </a>
+                  </div>
+                  <div class="book-cap">
+                    <h5>Title: </h5>
+                    <p><?=$row['title']?></p>
+                    <h5>Author: </h5>
+                    <p><?=$row['author']?></p>
+                    <h5 class="status"><?=$status = ($row['status'] == 0) ? '<span class="label label-success">available</span>' : '<span class="label label-danger">not available</span>';?></h5>
+                  </div>
+              </div>
+            </div>
+          <?php } ?>
         </div>
       </div>
   </section>
@@ -76,29 +78,36 @@
         
     <section class="fiction" id="fiction">
       <div class="container">
-        <div class="col-lg-12">
-            <div class="section-title float-left">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title float-left" data-aos="flip-up">
               <h2>New Fiction</h2>
             </div>
           </div>
-
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-              <?php 
+        </div>
+        
+        <div class="row">
             
-              $fict_query = "SELECT * FROM books WHERE category_id = 15 AND deleted = 1";
-              $fict_res = mysqli_query($conn, $fict_query);
+          <?php 
+        
+          $fict_query = "SELECT * FROM books WHERE category_id = 15 AND deleted = 1";
+          $fict_res = mysqli_query($conn, $fict_query);
 
-                while($fict_row = mysqli_fetch_assoc($fict_res)){?>
-                <ul id="owl-carousel" class="fiction_item owl-carousel owl-theme">
-                  <li class="img-box list-unstyled d-inline">
-                    <a href="book_details.php?book_id=<?=base64_encode($fict_row['id'])?>" class="" target="_blank">
-                      <img src="<?=$photo = (!empty($fict_row['photo']))? 'dashboard/images/uploads/'.$fict_row['photo'] : "assets/img/literature/demon-in-white.jpg"?>" class="img-fluid w-100 h-100" style="border-radius: 0;border: 1px dashed #7b27d8; width: 175px !important; height: 250px !important;">
-                    </a>
-                  </li>
-                </ul>
-                <?php } ?>
-          </div>
+            while($fict_row = mysqli_fetch_assoc($fict_res)){?>
+              <div class="col-xl-2 col-lg-3 col-sm-6 mt-2" data-aos="zoom-out">
+                <div class="card border-0 bg-none p-0 m-0 single-book text-center">
+                    <div class="card-img p-0 m-0">
+                      <a href="book_details.php?book_id=<?=base64_encode($fict_row['id'])?>" class="" target="_blank">
+                        <img src="<?=$photo = (!empty($fict_row['photo']))? 'dashboard/images/uploads/'.$fict_row['photo'] : "assets/img/literature/dasel.jpg"?>" class="img-fluid w-100 h-100" style="border-radius: 0;border: 1px dashed #7b27d8;  ">
+                      </a>
+                    </div>
+                    <div class="book-cap bg-none">
+                      <h5>Title: </h5>
+                      <p><?=$fict_row['title']?></p>
+                    </div>
+                </div>
+              </div>
+            <?php } ?>
         </div>
       </div>
     </section>
@@ -110,28 +119,38 @@
         
     <section class="fiction" id="fiction">
       <div class="container">
-          <div class="section-title float-left">
-            <h2>New Non-Fiction</h2>
-          </div>
-
-        <div class="row justify-content-center">
+        <div class="row">
           <div class="col-lg-12">
-            <div class="fiction_item owl-carousel">
-              <?php 
-            
-              $query_fict = "SELECT * FROM books WHERE category_id = 14 AND deleted = 1 ORDER BY id LIMIT 12";
-              $res_fict = mysqli_query($conn, $query_fict);
-
-                while($row_fict = mysqli_fetch_assoc($res_fict)){?>
-                <div class="img-box">
-                  <a href="book_details.php?book_id=<?=base64_encode($row_fict['id'])?>" class="" target="_blank">
-                    <img src="<?=$photo = (!empty($row_fict['photo']))? 'dashboard/images/uploads/'.$row['photo'] : "assets/img/literature/demon-in-white.jpg"?>" class="img-fluid w-100 h-100" style="border-radius: 0;border: 1px dashed #7b27d8;">
-                  </a>
-                </div>
-                 <?php } ?>
+            <div class="section-title float-left" data-aos="zoom-in">
+              <h2>New Non-Fiction</h2>
             </div>
           </div>
         </div>
+        
+      <!-- <div class="fiction_item owl-carousel"> -->
+        <div class="row">
+            <?php 
+          
+            $query_fict = "SELECT * FROM books WHERE category_id = 14 AND deleted = 1 ORDER BY id LIMIT 12";
+            $res_fict = mysqli_query($conn, $query_fict);
+
+              while($row_fict = mysqli_fetch_assoc($res_fict)){?>
+                <div class="col-xl-2 col-lg-3 col-sm-6 mt-2" data-aos="zoom-in">
+                  <div class="card border-0 p-0 m-0 single-book text-center">
+                      <div class="card-img p-0 m-0">
+                        <a href="book_details.php?book_id=<?=base64_encode($row_fict['id'])?>" class="" target="_blank">
+                          <img src="<?=$photo = (!empty($row_fict['photo']))? 'dashboard/images/uploads/'.$row_fict['photo'] : "assets/img/literature/dasel.jpg"?>" class="img-fluid w-100 h-100" style="border-radius: 0;border: 1px dashed #7b27d8;  ">
+                        </a>
+                      </div>
+                      <div class="book-cap bg-none">
+                        <h5>Title: </h5>
+                        <p><?=$row_fict['title']?></p>
+                      </div>
+                  </div>
+                </div>
+              <?php } ?>
+          </div>
+        <!-- </div> -->
       </div>
     </section>
 

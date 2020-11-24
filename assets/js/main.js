@@ -133,7 +133,23 @@
     $('#header').addClass('header-scrolled');
   }
 
-  
+        /*------------------------
+		Fiction & Non-Fiction
+    ----------------------- */
+        $(".fiction_item").owlCarousel({
+        items: 5,
+        dots: false,
+        autoHeight: false,
+        mouseDrag: false,
+        margin: 0,
+        autoplay: true,
+        loop: true,
+        smartSpeed: 1200,
+        nav: true,
+        navText: ["<i class='icofont-long-arrow-left '></i>", "<i class='icofont-long-arrow-right'></i>"]
+        });
+
+        
   // Back to top button
   $(window).scroll(function() {
     if ($(this).scrollTop() > 100) {

@@ -53,6 +53,7 @@
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>Bettter Library use Experience With Lib-Cater</h1>
           <h2>Maintains the record of the library.</h2>
+          <p class="text-light p-2">Sign up to have unlimited access to books.</p>
           <div><a href="sign_up.php" class="btn-get-started scrollto">Sign Up</a></div>
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">

@@ -27,42 +27,12 @@
         text-align: left !important;
       }}
       @media(min-width: 1200px){
-          .col-xl-2 {
+          #record .col-xl-2 {
           -ms-flex: 0 0 20% !important;
           flex: 0 0 20% !important;
           max-width: 20% !important;
         }
       }
-      .fiction_item.owl-carousel .owl-nav button {
-  height: 44px;
-  width: 44px;
-  border: 1px solid #ebebeb;
-  font-size: 24px;
-  color: #fff;
-  background: #7b27d8;
-  line-height: 48px;
-  text-align: center;
-  border-radius: 50%;
-  position: absolute;
-  left: -190px;
-  top: 50%;
-  -webkit-transform: translateY(-6px);
-  -ms-transform: translateY(-6px);
-  transform: translateY(-6px);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.fiction_item.owl-carousel .owl-nav button:hover {
-  border-color: #8577fb;
-  color: #8577fb;
-}
-
-.fiction_item.owl-carousel .owl-nav button.owl-next {
-  left: auto;
-  right: -190px;
-}
     </style>
 </head>
 

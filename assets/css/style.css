@@ -1452,7 +1452,7 @@ section {
 #record .book-cap{
   padding: 1.1rem 0;
 }
-#record .book-cap h5{
+#record .book-cap h5, #fiction .book-cap h5{
   font-family: "Poppins", sans-serif;
   color: #2c4964;
   text-align: center;
@@ -1464,7 +1464,9 @@ section {
 #record .book-cap .status{
   letter-spacing: 1px;
 }
-
+#fiction .single-book{
+  background: transparent !important;
+}
 /*--------------------------------------------------------------
 # Record
 --------------------------------------------------------------*/

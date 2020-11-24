@@ -9,6 +9,8 @@
 		$author = $_POST['author'];
 		$publisher = $_POST['publisher'];
 		$pub_date = $_POST['pub_date'];
+		$edition = $_POST['edition'];
+		$pages = $_POST['pages'];
 		$photo = $_FILES['image']['name'];
 
 		if(!empty($photo)){
@@ -17,7 +19,7 @@
 			}
 	
 
-		$sql = "UPDATE books SET isbn = '$isbn', title = '$title', category_id = '$category', author = '$author', publisher = '$publisher', publish_date = '$pub_date', photo = '$filename' WHERE id = '$id'";
+		$sql = "UPDATE books SET isbn = '$isbn', title = '$title', category_id = '$category', author = '$author', publisher = '$publisher', publish_date = '$pub_date', edition = '$edition', pages = '$pages', photo = '$filename' WHERE id = '$id'";
 		if($conn->query($sql)){
 			$_SESSION['success'] = 'Book updated successfully';
 		}

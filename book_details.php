@@ -135,7 +135,7 @@
                 <h4>Edition: <span><?=$row['edition'] ?></span></h4>
                 <h4>Language: <span>English</span></h4>
                 <h4>Pages: <span><?=$row['pages'] ?></span></h4>
-                <h4 class="status">Availability: <span><?=$status = ($row['status'] == 0) ? '<span class="alert alert-success text-white p-0 m-0" style="background: #7b27d8; border: 5px solid #7b27d8;">available</span>' : '<span class="alert alert-danger text-white p-0 m-0" style="background: #dd4b39; border: 3px solid #dd4b39;">not available</span>';?></span></h4>
+                <h4 class="status">Availability: <span><?=$status = ($row['status'] == 0) ? '<span class="alert alert-success text-white px-1 py-0 m-0" style="background: #7b27d8; border: 1px solid #7b27d8; font-size: .8rem;">available</span>' : '<span class="alert alert-danger text-white px-1 py-0 m-0" style="background: #dd4b39; border: 1px solid #dd4b39; font-size: .8rem;">not available</span>';?></span></h4>
               </div>
 
               <div class="about_author pt-4">

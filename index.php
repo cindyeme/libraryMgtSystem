@@ -20,7 +20,7 @@
               <li><i class="icofont-check-circled"></i> Increase librarian's efficiencies.</li>
               <li><i class="icofont-check-circled"></i> Helps to manage library functions constructively.</li>
               <li><i class="icofont-check-circled"></i> Saves time and reduces overheads.</li>
-              <li><i class="icofont-check-circled"></i> Customized reports for better management.</li>
+              <li><i class="icofont-check-circled"></i> Easier access to books.</li>
               <li><i class="icofont-check-circled"></i> Reduce all manual processes through single clicks and edits.</li>
             </ul>
             <a href="#" class="read-more">Read More <i class="icofont-long-arrow-right"></i></a>
@@ -37,7 +37,7 @@
 
         <div class="section-title">
           <h2>Features</h2>
-          <p>Lib-Cater allows you to manage the whole library through its simple and interactive interface. The librarian can manage all the library item details and keep a track on all the books that are issued. We reduce and solve the cumbersome manual management of library resources.</p>
+          <p>Lib-Cater allows you to manage the whole library activities through its simple and interactive interface. The librarian can manage all the library item details and keep a track on all the books that are issued. We reduce and solve the cumbersome manual management of library resources.</p>
         </div>
 
         <div class="row">
