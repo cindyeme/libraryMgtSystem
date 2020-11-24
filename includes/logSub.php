@@ -27,7 +27,7 @@
                     session_start();
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['serial_number'] = $row['serial_number'];
-                    header('location: https://libcater.herokuapp.com/index.php/user_index.php');
+                    header('location: ../user_index.php');
                 } else{
                     $errorMsg = " Please--enter--correct--login--details!";
                     header('location: ../index.php?error='.$errorMsg);
