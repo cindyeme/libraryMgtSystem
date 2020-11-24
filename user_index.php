@@ -29,23 +29,27 @@
 
   <section class="record" id="record">
     <div class="container">
-        <div class="section-title" data-aos="fade-up">
-          <h2>Books</h2>
-          <p>Search and reserve available books</p>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title" data-aos="fade-up">
+            <h2>Books</h2>
+            <p>Search and reserve available books</p>
+          </div>
         </div>
 
-        <div class="row">
+       
           <div class="col-lg-12 mb-4">
             <!-- <form action="includes/search.php" method="POST"> -->
               <div class="form-group has-feedback">
-                <input type="text" name="search" class="form-control" id="searchBox" placeholder="Search for Title or Author" >
-                <button type="submit" name="submit" id="btn_search" class=" form-control-feedback text-white" style="background: #7b27d8; border: 0;"><i class="bx bx-search"></i></button>
+                <input type="text" name="search" class="form-control" id="search_item" placeholder="Search for Title or Author" >
+                <button type="submit" name="submit" id="btn_search" class=" form-control-feedback text-white" style="background: #7b27d8; border: 0;" autocomplete="off"><i class="bx bx-search"></i></button>
               </div>
             <!-- </form> -->
           </div>
+        </div>
           
 
-
+        <div class="row" id="search_area">
           <?php 
           
           $query_book = "SELECT * FROM books WHERE deleted = 1 ORDER BY id LIMIT 15";
@@ -163,7 +167,21 @@
    
   <?php require_once('footer.php');?>
   
-  
+  <script>
+    $(function(){
+      $('#search_item').keyup(function(){
+          var searchKey = $(this).val();
+          $.ajax({
+            method: "POST",
+            url: "includes/search.php",
+            data: {search: searchKey},
+            success: function(response){
+              $('#search_area').html(response);
+            }
+        });
+      });
+    })
+  </script>
   
 </body>
 

@@ -119,11 +119,6 @@ $(function(){
       'info'        : false,
       'autoWidth'   : false
     })
-
-    $('#searchBox').keyup(function(){
-      // bookTable.search(this.value).draw();
-      alert ("type something");
-	});
 });
 </script>
 
