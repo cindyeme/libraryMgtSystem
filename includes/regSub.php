@@ -40,16 +40,12 @@
             if($result){
                 session_start(); // automatically logs the user in after registration.
                 $_SESSION['serial_number'] = $serial_number;
-                header('location: ../user_index.php');
+                header('location: https://libcater.herokuapp.com/index.php/user_index.php');
             }else{
-                // echo 'Registration failed!';
                 header('location: ../index.php');
                 }
             }
         } 
-        // else{
-        //     $error = arrary();
-        //     header('location: ../home_index.php?error='.join($error, urlencode('<br>')));
-        // }
+
 
 ?>

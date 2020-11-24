@@ -1,10 +1,11 @@
 <?php
     require_once('conn.php');
 
+    $output = "";
     // check if the search input has a value
 
     if(isset($_POST['search'])){
-        $searchKeyword = mysqli_real_escape_string($conn, $_POST['search']);
+        $searchKeyword = mysqli_real_escape_string($_POST['search']);
 
         // search query
         $query = "SELECT * FROM books WHERE title LIKE '%$searchKeyword%' OR author LIKE '%$searchKeyword%' ";
@@ -20,7 +21,7 @@
                 <div class='card border-0 p-0 m-0 single-book text-center'>
                   <div class='card-img p-0 m-0'>
                     <a href='book_details.php?book_id=".base64_encode($row['id'])."' target='_blank'>
-                      <img src='<?=$photo = (!empty($row['photo']))? 'dashboard/images/uploads/'.$row['photo'] : 'assets/img/anato_book.jpg''?> class='img-fluid w-100 h-100' style='border-radius: 0;border: 1px dashed #7b27d8;'>
+                      <img src='<?=$photo = (!empty($row['photo']))? '../dashboard/images/uploads/'.$row['photo'] : 'assets/img/anato_book.jpg''?> class='img-fluid w-100 h-100' style='border-radius: 0;border: 1px dashed #7b27d8;'>
                     </a>
                 </div>
                   <div class='book-cap'>

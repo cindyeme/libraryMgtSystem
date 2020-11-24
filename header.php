@@ -30,6 +30,7 @@
               <li><a href="#about">About</a></li>
               <li><a href="#features">Features</a></li>
               <li><a href="#shelf">Bookshelf</a></li>
+              <li><a href="user_index.php" class="d-none"></a></li>
               <li><a href="#faq">FAQ</a></li>
               <li><a href="#contact">Contact Librarian</a></li>
 
