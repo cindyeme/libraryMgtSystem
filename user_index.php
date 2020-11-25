@@ -3,10 +3,7 @@
   
 <?php require_once('includes/user_header.php'); ?>
 
-<?php require_once('sign_out.php'); ?>
   
-  
-
   <!-- ======= Hero Section ======= -->
 
   <section id="hero" class="d-flex align-items-center">

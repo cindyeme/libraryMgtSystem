@@ -14,7 +14,7 @@
                 <form method="POST" action="includes/reserve_bookSub.php" enctype="multipart/form-data">
                     <div class="input-group">
                       <label for="txt_usn">User Serial-number</label>
-                        <input type="number" name="usn" id="txt_usn" class="form-control"  required>
+                        <input type="number" name="usn" id="txt_usn" value="<?=$user['serial_number']?>" class="form-control"  required>
                         <div class="input-group-append">
                           <span class="input-group-text"><i class="bx bx-id-card"></i></span>
                         </div>
