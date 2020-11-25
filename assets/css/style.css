@@ -133,20 +133,6 @@ img{
   padding: 12px 0;
 }
 
-#header .logo {
-  font-size: 32px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-
-#header .logo a {
-  color: #fff;
-}
-
 #header .logo img {
   max-height: 40px;
 }
@@ -1414,6 +1400,9 @@ section {
 @media(max-width: 768px){
   #about img{
     display: none !important;
+  }
+  #header .d_none{
+    display: block !important;
   }
   #header .d_logo{
     display: none !important;

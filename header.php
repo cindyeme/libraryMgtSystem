@@ -22,7 +22,9 @@
 
       <div class="row justify-content-center">
 
-        <a href="index.php" class="d_none logo mr-auto"><img src="assets/img/logo.png" alt="logo" class="img-fluid col-md-12 m-auto"></a>
+        <div class="col-lg-12">
+          <a href="index.php" class="d_none logo mr-auto"><img src="assets/img/logo.png" alt="logo" class="img-fluid m-auto"></a>
+        </div>
 
         <div class="col-xl-9 d-flex align-items-center clearfix">
           <a href="index.php" class="logo d_logo mr-auto"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
