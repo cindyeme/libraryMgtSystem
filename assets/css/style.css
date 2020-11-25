@@ -228,81 +228,6 @@ img{
   color: #fff;
 }
 
-.nav-menu .drop-down ul {
-  display: block;
-  position: absolute;
-  left: 22px;
-  top: calc(100% + 30px);
-  z-index: 99;
-  opacity: 0;
-  visibility: hidden;
-  padding: 10px 0;
-  background: #fff;
-  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-  transition: 0.3s;
-}
-
-.nav-menu .drop-down:hover > ul {
-  opacity: 1;
-  top: 100%;
-  visibility: visible;
-}
-
-.nav-menu .drop-down li {
-  min-width: 180px;
-  position: relative;
-}
-
-.nav-menu .drop-down ul a {
-  padding: 10px 20px;
-  font-size: 14px;
-  text-transform: none;
-  color: #2c4964;
-}
-
-.nav-menu .drop-down ul a:hover, .nav-menu .drop-down ul .active > a, .nav-menu .drop-down ul li:hover > a {
-  color: #5846f9;
-}
-
-.nav-menu .drop-down > a:after {
-  content: "\ea99";
-  font-family: IcoFont;
-  padding-left: 5px;
-}
-
-.nav-menu .drop-down .drop-down ul {
-  top: 0;
-  left: calc(100% - 30px);
-}
-
-.nav-menu .drop-down .drop-down:hover > ul {
-  opacity: 1;
-  top: 0;
-  left: 100%;
-}
-
-.nav-menu .drop-down .drop-down > a {
-  padding-right: 35px;
-}
-
-.nav-menu .drop-down .drop-down > a:after {
-  content: "\eaa0";
-  font-family: IcoFont;
-  position: absolute;
-  right: 15px;
-}
-
-@media (max-width: 1366px) {
-  .nav-menu .drop-down .drop-down ul {
-    left: -90%;
-  }
-  .nav-menu .drop-down .drop-down:hover > ul {
-    left: -100%;
-  }
-  .nav-menu .drop-down .drop-down > a:after {
-    content: "\ea9d";
-  }
-}
 
 /* Get Startet Button */
 .get-started-btn {
@@ -329,7 +254,12 @@ img{
     padding: 6px 18px;
   }
 }
-
+@media(max-width: 768px){
+  .get-started-btn{
+    display: block !important;
+    margin: auto;
+  }
+}
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -387,22 +317,6 @@ img{
 .mobile-nav a:hover, .mobile-nav .active > a, .mobile-nav li:hover > a {
   color: #5846f9;
   text-decoration: none;
-}
-
-.mobile-nav .drop-down > a:after {
-  content: "\ea99";
-  font-family: IcoFont;
-  padding-left: 10px;
-  position: absolute;
-  right: 15px;
-}
-
-.mobile-nav .active.drop-down > a:after {
-  content: "\eaa1";
-}
-
-.mobile-nav .drop-down > a {
-  padding-right: 35px;
 }
 
 .mobile-nav .drop-down ul {
@@ -1508,5 +1422,7 @@ section {
   }
   #header .logo{
     display: block !important;
+    margin: auto;
+    text-align: center;
   }
 }
