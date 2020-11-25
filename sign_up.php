@@ -99,6 +99,7 @@
                       id="txt_pwd"
                       class="form-control"
                       placeholder="Password"
+                      minlength="8"
                       required
                     />
                     <div class="input-group-append">

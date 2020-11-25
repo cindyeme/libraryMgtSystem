@@ -3,7 +3,7 @@
   
 <?php require_once('includes/user_header.php'); ?>
 
-<!-- <?php require_once('sign_out.php'); ?> -->
+<?php require_once('sign_out.php'); ?>
   
   
 
