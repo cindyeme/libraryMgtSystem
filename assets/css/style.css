@@ -1501,3 +1501,12 @@ section {
   left: auto;
   right: -190px;
 }
+
+@media(max-width: 768px){
+  #about img{
+    display: none !important;
+  }
+  #header .logo{
+    display: block !important;
+  }
+}

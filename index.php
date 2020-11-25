@@ -8,7 +8,7 @@
 
         <div class="row">
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
-            <img src="assets/booksImg/library/book_shelf.png" class="img-fluid h-100" alt="">
+            <img src="assets/booksImg/library/book_shelf.png" class="img-fluid h-100" id="about_img" alt="">
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
             <h3>Discover Us</h3>
