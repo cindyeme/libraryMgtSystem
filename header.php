@@ -11,7 +11,12 @@
   <meta content="" name="keywords">
 
   <?php require_once('includes/css-links.php') ?>
-
+  <style>
+    @media(max-width: 768px){
+      .get-started-btn{
+      margin-top: 1.1rem;
+    }}
+  </style>
 </head>
 
 <body>
@@ -41,8 +46,8 @@
             </ul>
           </nav><!-- .nav-menu -->
 
-          <a href="sign_up.php" class="get-started-btn scrollto mt-3">Sign Up</a>
-          <a href="#" class="get-started-btn scrollto mt-3" data-toggle="modal" data-target="#sign_in">Sign In</a>
+          <a href="sign_up.php" class="get-started-btn scrollto">Sign Up</a>
+          <a href="#" class="get-started-btn scrollto" data-toggle="modal" data-target="#sign_in">Sign In</a>
         </div>
       </div>
 
