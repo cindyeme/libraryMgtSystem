@@ -28,9 +28,11 @@
             $book_res = mysqli_query($conn, $insert_book);
 
             if($book_res){
-                $error[] = urlencode('Book reserved!');
+                $success = "Book--reserved!";
+                header('location: ../user_index.php?success='.$success);
             }else{
-                $error[] = urlencode('Error reserving book!');
+                $errorMsg = "Failed--to--reserve--book!";
+                header('location: ../user_index.php?error='.$errorMsg);
             }
         }
     }else{
