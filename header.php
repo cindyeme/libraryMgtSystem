@@ -21,6 +21,9 @@
     <div class="container-fluid">
 
       <div class="row justify-content-center">
+        
+        <a href="index.php" class="d_none  logo mr-auto"><img src="assets/img/logo.png" alt="logo" class="img-fluid col-md-12 m-auto"></a>
+
         <div class="col-xl-9 d-flex align-items-center">
           <a href="index.php" class="logo mr-auto"><img src="assets/img/logo.png" alt="logo" class="img-fluid"></a>
 
@@ -54,7 +57,7 @@
           <h1>Bettter Library use Experience With Lib-Cater</h1>
           <h2>Maintains the record of the library.</h2>
           <p class="text-light p-2">Sign up to have unlimited access to books.</p>
-          <div><a href="sign_up.php" class="btn-get-started scrollto">Sign Up</a></div>
+          <div class="mb-5"><a href="sign_up.php" class="btn-get-started scrollto ">Sign Up</a></div>
         </div>
         <div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
           <img src="assets/booksImg/library/book_step.png" class="img-fluid animated h-100 w-100" alt="">

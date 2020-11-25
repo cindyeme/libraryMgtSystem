@@ -254,12 +254,7 @@ img{
     padding: 6px 18px;
   }
 }
-@media(max-width: 768px){
-  .get-started-btn{
-    display: block !important;
-    margin: auto;
-  }
-}
+
 /* Mobile Navigation */
 .mobile-nav-toggle {
   position: fixed;
@@ -1421,8 +1416,11 @@ section {
     display: none !important;
   }
   #header .logo{
-    display: block !important;
-    margin: auto;
-    text-align: center;
+    display: none !important;
+  }
+}
+@media(min-width: 768px){
+  #header .d_none{
+    display: none !important;
   }
 }
