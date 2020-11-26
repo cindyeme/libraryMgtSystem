@@ -14,9 +14,9 @@
     define("DB_PASSWORD", "emereninicynthia0853");
 	define("DB_NAME", "emereninicynthia");
 	
-	$live_conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
+	$conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
 
-	if($live_conn){
+	if($conn){
 		//echo "connected";
 	}else{
 		//echo "Not connected";
