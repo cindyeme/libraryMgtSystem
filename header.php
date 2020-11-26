@@ -22,7 +22,7 @@
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top ">
+  <header id="header" class="fixed-top index_header">
     <div class="container-fluid">
 
       <div class="row justify-content-center">

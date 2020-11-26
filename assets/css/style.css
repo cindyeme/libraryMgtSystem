@@ -1470,15 +1470,15 @@ section {
   #about img{
     display: none !important;
   }
-  #header .d_none{
+  .index_header .d_none{
     display: block !important;
   }
-  #header .d_logo{
+  .index_header .d_logo{
     display: none !important;
   }
 }
 @media(min-width: 768px){
-  #header .d_none{
+  .index_header .d_none{
     display: none !important;
   }
 }
