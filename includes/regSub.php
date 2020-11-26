@@ -42,7 +42,8 @@
                 $_SESSION['serial_number'] = $serial_number;
                 header('location: ../user_index.php');
             }else{
-                header('location: ../index.php');
+                $failed = "error".mysqli_error($conn);
+                header('location: ../index.php?error='.$failed);
                 }
             }
         } 

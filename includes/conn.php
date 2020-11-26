@@ -17,9 +17,9 @@
 	$live_conn = mysqli_connect(DB_SERVER, DB_USER, DB_PASSWORD, DB_NAME);
 
 	if($live_conn){
-		echo "connected";
+		//echo "connected";
 	}else{
-		echo "Not connected";
+		//echo "Not connected";
 	}
 	
 ?>
