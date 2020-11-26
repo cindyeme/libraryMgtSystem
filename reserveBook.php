@@ -11,7 +11,7 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-                <form method="POST" action="includes/reserve_bookSub.php" enctype="multipart/form-data">
+                <div enctype="multipart/form-data">
                     <div class="input-group">
                       <label for="txt_usn">User Serial-number</label>
                         <input type="number" name="usn" id="txt_usn" class="form-control"  required>
@@ -40,12 +40,14 @@
                         </select>
                     </div>
 
+                    <div id="msg"></div>
+
                     <div class="form-group">
-                        <input type="submit" name="submit" id="btn_submit" class="modal-btn w-100" value="RESERVE">
+                        <input type="button" name="submit" id="btn_reserve" class="modal-btn w-100" value="RESERVE">
                     </div>
 
-                </form>
-            </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>

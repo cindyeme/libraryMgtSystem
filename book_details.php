@@ -87,7 +87,7 @@
               <a href="user_index.php" class="text-dark">Home / </a> Book Info
             </h1>
             <div>
-              <a href="../" class="btn-get-started scrollto" download
+              <a href="<?='dashboard/images/uploads/'.$row['photo']?>" class="btn-get-started scrollto" download
                 ><i class="bx bx-download"></i> Download
               </a>
             </div>
@@ -119,7 +119,7 @@
             <div class="book_img">
                 <img
                   src="<?='dashboard/images/uploads/'.$row['photo'] ?>"
-                  alt=""
+                  alt="book_img"
                   class="img-fluid w-100 shadow"
                 />
               </div>
@@ -174,7 +174,7 @@
               </div>
               <div class="btns clearfix">
                 <button>
-                  <a href="assets/booksImg/library/book_shelf.png" download
+                  <a href="<?='dashboard/images/uploads/'.$row['photo']?>" download
                     ><i class="bx bx-download"></i> Download pdf</a
                   >
                 </button>
@@ -186,6 +186,7 @@
                 <button id="shareBtn">
                   <a href="#" data-toggle="modal" data-target="#share"><i class="bx bx-share"></i> Share</a>
                 </button>
+                <?php require_once('share.php'); ?>
 
               </div>
             </div>
@@ -197,5 +198,37 @@
 
     <?php require_once('footer.php')?>
 
+      <script>
+      $(function(){
+
+        $('#btn_reserve').click(function(){
+            const usn = $('#txt_usn').val();
+            const author = $('#txt_author').val();
+            const bookid = $('#book_title').val();
+            const isbn = $('#isbn').val();
+
+            if(usn == "" || author == "" || bookid == "" || isbn == ""){
+              var errorMsg = "<p class='alert alert-danger text-center'> All fields are required!! </p>";
+                $('#msg').html(errorMsg);
+            }else{
+                $.ajax({
+                  method: "POST",
+                  url: "includes/reserve_bookSub.php",
+                  data: {usn: usn, author: author, title: bookid, isbn: isbn},
+                  success: function(response){
+                    var msg = ""; 
+                      if (response == 1) {
+                        msg =  "<p class='alert alert-success text-center'> Book Reserved!!! <br> <span class='text-bold'> Reservation expires on 00-00-2020 00:00:00 </span> </p>";
+                          $('#msg').html(msg);
+                      } else {
+                          msg = "<p class='alert alert-danger text-center'> Enter valid details!!! </p>";
+                           $('#msg').html(msg);
+                      }
+                  }
+                });
+              }
+            });
+        });
+      </script>
   </body>
 </html>

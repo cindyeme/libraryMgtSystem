@@ -168,6 +168,7 @@
     aos_init();
   });
 
- 
+  // popover init
+  $('[data-toggle="popover"]').popover();
 
 })(jQuery);

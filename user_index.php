@@ -12,7 +12,7 @@
         <div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
           <h1>Bettter Library use Experience With Lib-Cater</h1>
           <h2>Maintains the record of the library.</h2>
-          <div><a href="#" class="btn-get-started scrollto">Get started <i class="bx bx-chevron-down"></i></a></div>
+          <div style="margin-bottom: 4.7rem;"><a href="#" class="btn-get-started" data-toggle="tooltip" title="Search, reserve, download, read and share books of interest." data-trigger="focus" data-placement="right">Get started <i class="bx bx-chevron-down"></i></a></div>
         </div>
         <div class="col-xl-4 col-lg-6 pb-5 pb-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
           <img src="assets/booksImg/library/3_books.png" class="img-fluid animated w-100" alt="">
@@ -43,9 +43,8 @@
               </div>
             <!-- </form> -->
           </div>
-        </div>
-          
-
+        </div>       
+  
         <div class="row" id="search_area">
           <?php 
           
@@ -53,7 +52,7 @@
           $book_res = mysqli_query($conn, $query_book);
 
           while($row = mysqli_fetch_assoc($book_res)){?>
-            <div class="col-xl-2 col-lg-3 col-md-6 col-sm-6 mt-5" data-aos="zoom-in">
+            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mt-5" data-aos="zoom-in">
               <div class="card border-0 p-0 m-0 single-book text-center">
                   <div class="card-img p-0 m-0">
                     <a href="book_details.php?book_id=<?=base64_encode($row['id'])?>" class="" target="_blank">
@@ -95,7 +94,7 @@
           $fict_res = mysqli_query($conn, $fict_query);
 
             while($fict_row = mysqli_fetch_assoc($fict_res)){?>
-              <div class="col-xl-2 col-lg-3 col-sm-6 mt-2" data-aos="zoom-out">
+              <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 mt-2" data-aos="zoom-out">
                 <div class="card border-0 bg-none p-0 m-0 single-book text-center">
                     <div class="card-img p-0 m-0">
                       <a href="book_details.php?book_id=<?=base64_encode($fict_row['id'])?>" class="" target="_blank">
@@ -136,7 +135,7 @@
             $res_fict = mysqli_query($conn, $query_fict);
 
               while($row_fict = mysqli_fetch_assoc($res_fict)){?>
-                <div class="col-xl-2 col-lg-3 col-sm-6 mt-2" data-aos="zoom-in">
+                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 mt-2" data-aos="zoom-in">
                   <div class="card border-0 p-0 m-0 single-book text-center">
                       <div class="card-img p-0 m-0">
                         <a href="book_details.php?book_id=<?=base64_encode($row_fict['id'])?>" class="" target="_blank">
@@ -177,6 +176,9 @@
             }
         });
       });
+
+    $('[data-toggle="tooltip"]').tooltip();
+
     })
   </script>
   
