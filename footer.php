@@ -12,7 +12,7 @@
                Owerri, Imo state<br>
               Nigeria <br><br>
               <strong>Phone:</strong> +23490 32911 321<br>
-              <strong>Email:</strong> libcaster@gmail.com<br>
+              <strong>Email:</strong> libcater@gmail.com<br>
             </p>
           </div>
 
