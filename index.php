@@ -34,11 +34,15 @@
     <!-- ======= Features Section ======= -->
     <section id="features" class="features">
       <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Features</h2>
-          <p>Lib-Cater allows you to manage the whole library activities through its simple and interactive interface. The librarian can manage all the library item details and keep a track on all the books that are issued. We reduce and solve the cumbersome manual management of library resources.</p>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Features</h2>
+              <p>Lib-Cater allows you to manage the whole library activities through its simple and interactive interface. The librarian can manage all the library item details and keep a track on all the books that are issued. We reduce and solve the cumbersome manual management of library resources.</p>
+            </div>
+          </div>
         </div>
+        
 
         <div class="row">
           <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column align-items-lg-center">
@@ -75,10 +79,15 @@
     <section id="shelf" class="shelf">
       <div class="container" data-aos="fade-up">
 
-        <div class="section-title">
-          <h2>Shelf</h2>
-          <p>See what we have in stock</p>
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-title">
+            <h2>Shelf</h2>
+            <p>See what we have in stock</p>
+          </div>
         </div>
+      </div>
+        
 
         <div class="row">
           <div class="col-lg-12">
@@ -212,11 +221,15 @@
   <!-- ======= Frequently Asked Questions Section ======= -->
     <section id="faq" class="faq">
       <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Frequently Asked Questions</h2>
-          <p>Check out answers to our frequently asked questions and do well to send across your questions that are concerned with our system. We do not delay in sending you answers.</p>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="section-title">
+              <h2>Frequently Asked Questions</h2>
+              <p>Check out answers to our frequently asked questions and do well to send across your questions that are concerned with our system. We do not delay in sending you answers.</p>
+            </div>
+          </div>
         </div>
+        
 
         <div class="faq-list">
           <ul>

@@ -12,7 +12,7 @@
 
   <?php require_once('includes/css-links.php') ?>
   
-  <?php require_once('includes/header.php'); ?>
+  <?php require_once('link_header.php'); ?>
 
     <style>
       @media(max-width: 992px){
@@ -31,6 +31,13 @@
           -ms-flex: 0 0 20% !important;
           flex: 0 0 20% !important;
           max-width: 20% !important;
+        }
+      }
+      @media(max-width: 768px){
+        #record .col-sm-6, #fiction .col-sm-6{
+          -ms-flex: 0 0 50% !important;
+          flex: 0 0 50% !important;
+          max-width: 50% !important;
         }
       }
     </style>
@@ -52,7 +59,7 @@
               <li><a class="pt-4" href="#record">Record</a></li>
               <li><a class="pt-4" href="#contact">Contact Librarian</a></li>
               <li id="user_info" class="user_info d-flex justify-content-between ml-4">
-                <img src="dist/img/avatar.png" style="border-radius: 50%; width: 40px; height: 40px; object-fit: cover;" class="img-fluid mr-4" alt="user_img">
+                <img src="dist/img/avatar.png" style="border-radius: 50%; width: 40px !important; height: 40px !important; object-fit: cover;" class="img-fluid mr-4" alt="user_img">
               <h5 class="fullname" style="color: rgba(255, 255, 255, 0.7);
                   font-size: 15px !important;
                   font-weight: 600 !important;

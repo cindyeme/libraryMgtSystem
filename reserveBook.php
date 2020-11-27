@@ -14,7 +14,7 @@
                 <div enctype="multipart/form-data">
                     <div class="input-group">
                       <label for="txt_usn">User Serial-number</label>
-                        <input type="number" name="usn" id="txt_usn" class="form-control"  required>
+                        <input type="text" name="usn" id="txt_usn" class="form-control" value="<?=$user['serial_number'] ?>"  required>
                         <div class="input-group-append">
                           <span class="input-group-text"><i class="bx bx-id-card"></i></span>
                         </div>

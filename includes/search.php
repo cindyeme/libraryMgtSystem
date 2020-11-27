@@ -1,4 +1,4 @@
-<?php require_once('header.php');?>
+<?php require_once('../link_header.php');?>
 <?php
     require_once('conn.php');
 
@@ -30,11 +30,11 @@
         }else{
             while($row = mysqli_fetch_assoc($execQuery)){
                   echo 
-                "<div class='col-xl-2 col-lg-3 col-md-6' data-aos='zoom-in'>
+                "<div class='col-xl-2 col-lg-3 col-md-4 col-sm-6' data-aos='zoom-in'>
                     <div class='card border-0 p-0 m-0 single-book text-center'>
                         <div class='card-img p-0 m-0'>
                         <a href='book_details.php?book_id=".base64_encode($row['id'])."' target='_blank'>
-                        <img src='".'dashboard/images/uploads/'.$row['photo']."' class='img-fluid w-100 h-100' style='border-radius: 0;border: 1px dashed #7b27d8;'>
+                        <img src='".'dashboard/images/uploads/'.$row['photo']."' class='img-fluid' style='border-radius: 0;border: 1px dashed #7b27d8;'>
                         </a>
                         <div class='book-cap text-center'>
                             <h5>Title: </h5>

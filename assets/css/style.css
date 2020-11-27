@@ -1287,11 +1287,10 @@ section {
 
 #footer .footer-newsletter form input[type="submit"] {
   position: absolute;
-  top: -1px;
+  top: 0px;
   right: -2px;
   bottom: -1px;
   border: 0;
-  background: none;
   font-size: 16px;
   padding: 0 20px;
   background: rgba(123, 39, 216, 0.8);

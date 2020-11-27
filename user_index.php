@@ -94,7 +94,7 @@
           $fict_res = mysqli_query($conn, $fict_query);
 
             while($fict_row = mysqli_fetch_assoc($fict_res)){?>
-              <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 mt-2" data-aos="zoom-out">
+              <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mt-2" data-aos="zoom-out">
                 <div class="card border-0 bg-none p-0 m-0 single-book text-center">
                     <div class="card-img p-0 m-0">
                       <a href="book_details.php?book_id=<?=base64_encode($fict_row['id'])?>" class="" target="_blank">
@@ -135,7 +135,7 @@
             $res_fict = mysqli_query($conn, $query_fict);
 
               while($row_fict = mysqli_fetch_assoc($res_fict)){?>
-                <div class="col-xl-2 col-lg-3 col-md-3 col-sm-6 mt-2" data-aos="zoom-in">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 mt-2" data-aos="zoom-in">
                   <div class="card border-0 p-0 m-0 single-book text-center">
                       <div class="card-img p-0 m-0">
                         <a href="book_details.php?book_id=<?=base64_encode($row_fict['id'])?>" class="" target="_blank">

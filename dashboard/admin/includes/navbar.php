@@ -2,7 +2,7 @@
   <!-- Logo -->
   <a href="index.php" class="logo">
     <!-- mini logo for sidebar mini 50x50 pixels -->
-    <span class="logo-mini"><b>L</b>MS</span>
+    <span class="logo-mini"><b>L</b>-C</span>
     <!-- logo for regular state and mobile devices -->
     <span class="logo-lg"><b>Lib-</b>Cater</span>
   </a>
@@ -28,7 +28,7 @@
 
               <p>
                 <?php echo $user['firstname'].' '.$user['lastname']; ?>
-                <small>Member since <?php echo date('M. Y', strtotime($user['created_on'])); ?></small>
+                <small>Librarian since <?php echo date('M. Y', strtotime($user['created_on'])); ?></small>
               </p>
             </li>
             <li class="user-footer">

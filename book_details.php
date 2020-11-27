@@ -1,7 +1,17 @@
 <?php
   require_once('includes/conn.php');
   // require_once('includes/session.php');
-          
+    session_start();
+    if(isset($_SESSION['serial_number'])){
+
+        $serial_number = $_SESSION['serial_number'];
+
+        $user_sql = "SELECT * FROM users WHERE serial_number = '$serial_number' AND deleted = 1";
+        $result = mysqli_query($conn, $user_sql);
+
+        $user = mysqli_fetch_assoc($result);
+    }
+
 
   if(!isset($_GET['book_id'])){
     header("location: user_index.php");
@@ -75,7 +85,7 @@
             rgba(88, 70, 249, 0.7) 0%,
             rgba(123, 39, 216, 0.5) 100%
           ),
-          url(assets/booksImg/library/library.jpg) center/cover no-repeat !important;
+          url(assets/booksImg/library/library.jpg) center/cover no-repeat !important; height: 100vh; width: 100%;
       "
     >
       <div class="container-fluid" data-aos="fade-up">
@@ -183,8 +193,8 @@
                 </button>
                 <?php require_once('reserveBook.php'); ?>
 
-                <button id="shareBtn">
-                  <a href="#" data-toggle="modal" data-target="#share"><i class="bx bx-share"></i> Share</a>
+                <button id="shareBtn" data-toggle="modal" data-target="#share">
+                  <a href="#"><i class="bx bx-share"></i> Share</a>
                 </button>
                 <?php require_once('share.php'); ?>
 
