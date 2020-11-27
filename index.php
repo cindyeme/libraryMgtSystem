@@ -314,7 +314,7 @@
                       if (response == 1) {
                           window.location = 'user_index.php';
                       } else {
-                          msg = "<p class='alert alert-danger text-center'> Enter correct login details!!! </p>";
+                          msg = "<p class='alert alert-danger text-center'> Please enter correct login details!! </p>";
                            $('#msg').html(msg);
                       }
                   }
