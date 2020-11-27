@@ -293,6 +293,37 @@
 
   <?php require_once('footer.php');?>
 
+    <script>
+      $(function(){
+
+        $('#btn_login').click(function(){
+            const usn = $('#txt_usn').val();
+            const email = $('#txt_email').val();
+            const password = $('#txt_pwd').val();
+
+            if(usn == "" || email == "" || password == ""){
+              var errorMsg = "<p class='alert alert-danger text-center'> All fields are required!! </p>";
+                $('#msg').html(errorMsg);
+            }else{
+                $.ajax({
+                  method: "POST",
+                  url: "includes/logSub.php",
+                  data: {usn: usn, email: email, password: password},
+                  success: function(response){
+                    var msg = ""; 
+                      if (response == 1) {
+                          window.location = 'user_index.php';
+                      } else {
+                          msg = "<p class='alert alert-danger text-center'> Enter correct login details!!! </p>";
+                           $('#msg').html(msg);
+                      }
+                  }
+                });
+              }
+            });
+        });
+      </script>
+
 </body>
 
 </html>
