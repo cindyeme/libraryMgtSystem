@@ -228,7 +228,7 @@
                   success: function(response){
                     var msg = ""; 
                       if (response == 1) {
-                        msg =  "<p class='alert alert-success text-center'> Book Reserved!!! <br> <span class='text-bold'> Reservation expires on 00-00-2020 00:00:00 </span> </p>";
+                        msg =  "<p class='alert alert-success text-center'> Book Reserved!!! <br> <span class='text-bold'> Reservation expires on 05-12-2020 01:30:00 GMT </span> </p>";
                           $('#msg').html(msg);
                       } else {
                           msg = "<p class='alert alert-danger text-center'> Enter valid details!!! </p>";
