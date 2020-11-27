@@ -11,7 +11,7 @@
 
             <!-- Modal body -->
             <div class="modal-body">
-                <form method="POST" action="includes/logSub.php" enctype="multipart/form-data">
+                <div enctype="multipart/form-data">
                     <div class="input-group">
                       <label for="txt_usn">Serial-Number</label>
                         <input type="number" name="usn" id="txt_usn" class="form-control" placeholder="USN" required>
@@ -34,15 +34,17 @@
                         </div>
                     </div>
 
+                    <div id="msg"></div>
+                    
                     <div class="form-group">
-                        <input type="submit" name="submit" id="btn_submit" class="modal-btn w-100" value="SIGN IN">
+                        <input type="button" name="submit" id="btn_login" class="modal-btn w-100" value="SIGN IN">
                     </div>
 
                     <div class="forgot_pwd">
                       <a href="retrieve_email.php" class="text-center">Forgot Password?</a>
                     </div>
-                </form>
-            </div>
+                  </div>
+              </div>
             </div>
         </div>
     </div>
