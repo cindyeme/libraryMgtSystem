@@ -85,7 +85,7 @@
             rgba(88, 70, 249, 0.7) 0%,
             rgba(123, 39, 216, 0.5) 100%
           ),
-          url(assets/booksImg/library/library.jpg) center/cover no-repeat !important; height: 100vh; width: 100%;
+          url(assets/booksImg/library/library.jpg) center/cover no-repeat !important; height: 60vh; width: 100%;
       "
     >
       <div class="container-fluid" data-aos="fade-up">
@@ -93,9 +93,9 @@
           <div
             class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center"
           >
-            <h1>
+            <h3 class="text-white">
               <a href="user_index.php" class="text-dark">Home / </a> Book Info
-            </h1>
+            </h3>
             <div>
               <a href="<?='dashboard/images/uploads/'.$row['photo']?>" class="btn-get-started scrollto" download
                 ><i class="bx bx-download"></i> Download
