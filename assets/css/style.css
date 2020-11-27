@@ -451,11 +451,11 @@ img{
     max-width: 500px !important;
 }}
 .forgot_password .forgot_container{
-  transform: translateY(50%) !important;
-  -webkit-transform: translateY(50%) !important;
-  -moz-transform: translateY(50%) !important;
-  -ms-transform: translateY(50%) !important;
-  -o-transform: translateY(50%) !important;
+  transform: translateY(30%) !important;
+  -webkit-transform: translateY(30%) !important;
+  -moz-transform: translateY(30%) !important;
+  -ms-transform: translateY(30%) !important;
+  -o-transform: translateY(30%) !important;
 }
 #sign_up .container{
   background: #fff;
