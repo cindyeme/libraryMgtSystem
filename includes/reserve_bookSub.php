@@ -1,8 +1,6 @@
 <?php
     require_once('conn.php');
     
-
-    //if(isset($_POST['submit'])){
         $usn = isset($_POST['usn']) ? trim($_POST['usn']) : "";
         $author = isset($_POST['author']) ? trim($_POST['author']) : "";
         $book_id = isset($_POST['title']) ? trim($_POST['title']) : "";
@@ -32,5 +30,5 @@
                 echo 0;
             }
         }
-    //}
+ 
 ?>
