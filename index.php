@@ -10,7 +10,7 @@
           <div class="col-lg-6 order-1 order-lg-2" data-aos="zoom-in" data-aos-delay="150">
             <img src="assets/booksImg/library/book_shelf.png" class="img-fluid h-100" id="about_img" alt="">
           </div>
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content" data-aos="fade-right">
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content bg-none" data-aos="fade-right">
             <h3>Discover Us</h3>
             <p class="font-italic">
               Lib-Cater manages all manual functions of a library. Allows the librarian to maintain library resources in a  more operative manner that will help to save their time. It is also convenient for the librarian to manage the process of books alloting and management. Lib-Cater is most proficient and easy to use system for managing all the processes involved in a library in the most effective ways.
@@ -314,7 +314,7 @@
                       if (response == 1) {
                           window.location = 'user_index.php';
                       } else {
-                          msg = "<p class='alert alert-danger text-center'> Please enter correct login details!! </p>";
+                          msg = "<p class='alert alert-danger text-center'> Please enter valid details!! </p>";
                            $('#msg').html(msg);
                       }
                   }
