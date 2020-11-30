@@ -34,6 +34,8 @@
                       name="fullname"
                       id="txt_fullname"
                       class="form-control"
+                      pattern="[A-Z a-z]+"
+                      title="Required format: A-Z || a-z"
                       placeholder="Fullname"
                       required
                     />
