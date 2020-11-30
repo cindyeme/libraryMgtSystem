@@ -34,7 +34,7 @@
 
                         <div class="input-group">
                           <label for="new_pwd"> New Password</label><br>
-                            <input type="password" name="new_password" id="new_pwd" class="form-control" placeholder="Enter new password" minlength="8" required>
+                            <input type="password" name="new_password" id="new_pwd" class="form-control" placeholder="Enter new password" minlength="8" required autofocus>
                             <div class="input-group-append">
                               <span class="input-group-text"><i class="bx bx-lock"></i></span>
                             </div>
@@ -86,6 +86,10 @@
 
             }else if(newPassword !== confirmPassword){
               const errorMsg = "<p class='alert alert-danger text-center'> Password does not match!! </p>";
+                $('#msg').html(errorMsg);
+
+            } else if((newPassword.length || confirmPassword.length) < 8){
+              const errorMsg = "<p class='alert alert-danger text-center'> Password must be greater than 7. </p>";
                 $('#msg').html(errorMsg);
 
             }else{
